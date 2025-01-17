@@ -1,36 +1,51 @@
-# Python_Network_Toolkit
-General purpose python based Network toolkit
+# Python Network Toolkit
 
-## Pre-Requisites:
+A general-purpose Python-based network toolkit for network diagnostics and analysis.
 
+---
+
+## Features
+- **Ping**: Check the reachability of a host.
+- **DNS Lookup**: Resolve domain names to IP addresses.
+- **Traceroute**: Trace the path packets take to a target host.
+- **Port Scan**: Scan open ports on a target machine.
+- **Packet Sniffer**: Capture packets on a specified network interface.
+- **IP Geolocation**: Locate a given IP address geographically.
+
+---
+
+## Pre-Requisites
+Install the required dependencies:
+```bash
 pip install scapy requests
+```
 
-## Usage:
-    python network_toolkit.py --help
-    python network_toolkit.py ping --target google.com --count 3
-    python network_toolkit.py dns-lookup --domain google.com
-    python network_toolkit.py traceroute --target google.com
-    python network_toolkit.py port-scan --target 127.0.0.1 --ports 22,80,443
-    python network_toolkit.py sniff --interface eth0
-    python network_toolkit.py ip-loc --ip 8.8.8.8
-    
-## Examples:
-    
-### Ping a host 4 times
+---
+
+## Usage
+Run the tool with the following commands:
+```bash
+python network_toolkit.py --help
+python network_toolkit.py ping --target <host> --count <count>
+python network_toolkit.py dns-lookup --domain <domain>
+python network_toolkit.py traceroute --target <host>
+python network_toolkit.py port-scan --target <host> --ports <port1,port2,...>
+python network_toolkit.py sniff --interface <interface>
+python network_toolkit.py ip-loc --ip <ip-address>
+```
+
+---
+
+## Examples
+
+### Ping a Host
+Ping a target host 4 times:
+```bash
 python network_toolkit.py ping --target google.com --count 4
+```
 
-### Perform a DNS lookup
+### Perform a DNS Lookup
+Resolve the IP address of a domain:
+```bash
 python network_toolkit.py dns-lookup --domain google.com
-
-### Traceroute a host
-python network_toolkit.py traceroute --target google.com
-
-### Port scan a target (default top 1000 ports)
-python network_toolkit.py port-scan --target 192.168.1.10
-
-### Sniff packets on interface eth0 (Ctrl+C to stop)
-python network_toolkit.py sniff --interface eth0
-
-### Locate an IP address
-python network_toolkit.py ip-loc --ip 8.8.8.8
-
+```
