@@ -49,3 +49,15 @@ Resolve the IP address of a domain:
 ```bash
 python network_toolkit.py dns-lookup --domain google.com
 ```
+
+### Trace the Route
+Trace the network path to a target host:
+```bash
+python network_toolkit.py traceroute --target google.com
+```
+
+### Port Scan
+Scan open ports (default: top 1000 ports):
+```bash
+python network_toolkit.py port-scan --target 192.168.1.10
+```
