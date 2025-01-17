@@ -61,3 +61,21 @@ Scan open ports (default: top 1000 ports):
 ```bash
 python network_toolkit.py port-scan --target 192.168.1.10
 ```
+
+Scan specific ports:
+```bash
+python network_toolkit.py port-scan --target 127.0.0.1 --ports 22,80,443
+```
+
+### Packet Sniffing
+Capture packets on the specified interface:
+```bash
+python network_toolkit.py sniff --interface eth0
+```
+> **Note**: Use `Ctrl+C` to stop sniffing.
+
+### Locate an IP Address
+Get the geographic location of an IP address:
+```bash
+python network_toolkit.py ip-loc --ip 8.8.8.8
+```
