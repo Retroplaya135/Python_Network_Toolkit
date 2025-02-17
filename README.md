@@ -158,6 +158,19 @@ Get the geographic location of an IP address:
 python network_toolkit.py ip-loc --ip 8.8.8.8
 ```
 
+```
++----------------------+
+| Send ICMP packets   |
+| (4 packets sent)    |
++----------------------+
+        |
+        v
++----------------------+
+| Receive Replies     |
+| Show latency times  |
++----------------------+
+```
+
 
 ---
 
