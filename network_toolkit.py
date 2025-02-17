@@ -10,6 +10,31 @@ A single script that provides multiple networking utilities:
 5. Sniff network packets
 6. IP geolocation lookup
 
+```
++-------------------------------------+
+|        Python Network Toolkit      |
+|   (Command-line networking tool)   |
++-------------------------------------+
+        |          |          |          |          |          |
+        v          v          v          v          v          v
++----------------+  +----------------+  +----------------+  +----------------+  
+| Ping Utility  |  |  DNS Lookup     |  |  Traceroute    |  |  Port Scanner  |
+| (ICMP check)  |  | (Resolve IP)    |  | (Find hops)   |  | (Scan ports)   |
++----------------+  +----------------+  +----------------+  +----------------+
+        |          
+        v          
++----------------+
+| Packet Sniffer | 
+| (Monitor net)  |
++----------------+
+        |
+        v
++----------------+
+| IP Geolocation |
+| (Find location)|
++----------------+
+```
+
 Requirements:
     - Python 3.x
     - scapy (pip install scapy)
