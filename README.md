@@ -140,6 +140,37 @@ Scan open ports (default: top 1000 ports):
 python network_toolkit.py port-scan --target 192.168.1.10
 ```
 
+# Port Scan Flow 
+
+```
++----------------------+
+| User Inputs Target  |
+| (e.g. 127.0.0.1)    |
++----------------------+
+        |
+        v
++----------------------+
+| Generate SYN Packet |
++----------------------+
+        |
+        v
++----------------------+
+| Send Packet to Port |
+| (e.g. Port 80)     |
++----------------------+
+        |
+        v
++----------------------+
+| Wait for Response  |
++----------------------+
+        |
+        v
++----------------------+
+| Open / Closed?     |
++----------------------+
+
+```
+
 Scan specific ports:
 ```bash
 python network_toolkit.py port-scan --target 127.0.0.1 --ports 22,80,443
