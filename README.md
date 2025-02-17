@@ -60,6 +60,35 @@ python network_toolkit.py sniff --interface <interface>
 python network_toolkit.py ip-loc --ip <ip-address>
 ```
 
+```
++----------------------+
+| User Executes Command |
++----------------------+
+        |
+        v
++----------------------+
+|  Argument Parser    |
+|  (argparse module)  |
++----------------------+
+        |
+        v
++----------------------+
+|  Process Request    |
+|  (Choose function)  |
++----------------------+
+        |
+        v
++----------------------+
+|  Execute Networking |
+|  Functions         |
++----------------------+
+        |
+        v
++----------------------+
+|  Return Output      |
+|  (Success/Error)    |
++----------------------+
+```
 ---
 
 ## Examples
