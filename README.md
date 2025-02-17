@@ -48,6 +48,28 @@ pip install scapy requests
 
 ---
 
+# Core Network Utilities
+
+```
++------------------------------------------------+
+|            Networking Commands                |
++------------------------------------------------+
+| 🔹 Ping Utility                               |
+|   - Sends ICMP echo requests                 |
+| 🔹 DNS Lookup                                |
+|   - Resolves domain to IP                     |
+| 🔹 Traceroute                                |
+|   - Traces network path                       |
+| 🔹 Port Scanner                              |
+|   - Scans TCP ports (SYN scan)               |
+| 🔹 Packet Sniffing                           |
+|   - Captures network packets                 |
+| 🔹 IP Geolocation                            |
+|   - Fetches geo-location for an IP           |
++------------------------------------------------+
+```
+
+
 ## Usage
 Run the tool with the following commands:
 ```bash
