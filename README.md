@@ -60,6 +60,7 @@ python network_toolkit.py sniff --interface <interface>
 python network_toolkit.py ip-loc --ip <ip-address>
 ```
 
+# Command Flow
 ```
 +----------------------+
 | User Executes Command |
