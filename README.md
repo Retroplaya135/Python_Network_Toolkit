@@ -14,6 +14,32 @@ A general-purpose Python-based network toolkit for network diagnostics and analy
 
 ---
 
+# Code Overview
+```
++-------------------------------------+
+|        Python Network Toolkit      |
+|   (Command-line networking tool)   |
++-------------------------------------+
+        |          |          |          |          |          |
+        v          v          v          v          v          v
++----------------+  +----------------+  +----------------+  +----------------+  
+| Ping Utility  |  |  DNS Lookup     |  |  Traceroute    |  |  Port Scanner  |
+| (ICMP check)  |  | (Resolve IP)    |  | (Find hops)   |  | (Scan ports)   |
++----------------+  +----------------+  +----------------+  +----------------+
+        |          
+        v          
++----------------+
+| Packet Sniffer | 
+| (Monitor net)  |
++----------------+
+        |
+        v
++----------------+
+| IP Geolocation |
+| (Find location)|
++----------------+
+```
+
 ## Pre-Requisites
 Install the required dependencies:
 ```bash
